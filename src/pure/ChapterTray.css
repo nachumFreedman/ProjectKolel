@@ -1,0 +1,27 @@
+.chaptertray-containing {
+  border: 1px solid black;
+  max-width: 50vw;
+  display: flex;
+  border: 1px solid black;
+}
+
+.chaptertray-title {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-width: 49vw;
+  padding: 1px;
+  margin-left: 0;
+}
+
+.chaptertray-pereknumber {  
+  border: 1px solid black;
+  min-width: 1vw;
+  margin: 1px;
+  padding-left: 1vw;
+}
+
+.chaptertray-pereknumber:last-child {
+  border-right: 1px solid black;
+}

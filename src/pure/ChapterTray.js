@@ -7,16 +7,16 @@ const perekim = series[1].books[10].perekim;
 class ChapterTray extends Component{ 
   render(){
     return (
-      <div>
-        <ul>
+      <div className='chaptertray-containing'>
+        <ul className='chaptertray-ul'>
           {
             perekim.map((perek, pi) => (
-              <li key={pi}>
-                Perek{pi+1}
+              <li key={pi} className='chaptertray-title'>
+                Perek{' '+ (pi+1)}
                 {
                   perek.map((vi) => (
-                    <div key={vi}>
-                      <a href="#/blah">
+                    <div key={vi} className='chaptertray-pereknumber'>
+                      <a href="#/mishna" className='chaptertray-pereknumber-link'>
                         {vi}
                       </a>
                     </div>
