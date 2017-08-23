@@ -19,7 +19,7 @@ ul.BookTray-Series li{
 
 
 ul.BookTray-Series li:last-child {
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 0;
 }
 
 ul.BookTray-Series li:first-child {
@@ -55,7 +55,7 @@ ul.BookTray-Books li:first-child {
 }
 
 .BookTray-Books li:hover {
-  background-color: #88bbee;
+  background-color: #77aadd;
   cursor: pointer;
 }
 .BookTray-Series li:hover {
