@@ -5,7 +5,6 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import SearchIcon from 'react-icons/lib/md/search';
 import TextField from 'material-ui/TextField';
 
-import { GridList, GridTile } from 'material-ui/GridList';
 import Subheader from 'material-ui/Subheader';
 
 import GridTray from '../pure/GridTray';

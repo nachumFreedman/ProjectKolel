@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import DafTable from '../../pure/DafTable';
+
 class TalmudContent extends Component {
   render(){
     return (
       <div>
-        pick a daf
-        heb-tab
+        <p>Choose which Daf</p>
+        <DafTable lang='he' hrefPrefix={window.location.hash}/>
       </div>
     );
   }

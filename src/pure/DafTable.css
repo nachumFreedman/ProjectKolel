@@ -1,0 +1,21 @@
+table.dafTable {
+  width: 70%;
+  margin: 0 auto;
+
+  border: 1px solid black;
+  background-color: white;
+
+  font-size: .875em;
+
+  text-align: center;
+}
+
+table.dafTable td {
+  border: 1px solid black;
+  background-color: white;
+
+  padding: 3px;
+
+  width: 14.3%;
+  line-height: 2;
+}
