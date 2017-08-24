@@ -3,6 +3,7 @@ import Mishna from './p/Mishna';
 import Home from './p/Home';
 import Insights from './p/Insights';
 import RevachLDaf from './p/RevachLDaf';
+import Talmud from './p/Talmud';
 
 const Background = ComingSoon;
 const ReviewQA = ComingSoon;
@@ -28,6 +29,11 @@ export default [
     title: 'Home',
     path: '/',
     component: Home,
+  },
+  {  
+    title: 'Talmud',
+    path: '/talmud',
+    component: Talmud,
   },
   {  
     title: 'Mishna',

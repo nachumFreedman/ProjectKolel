@@ -12,6 +12,8 @@ import Layout from './Layout';
 import routes from  './routes';
 
 
+import { TalmudBook, TalmudContent, TalmudDaf } from './p/Talmud/';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
@@ -29,6 +31,10 @@ ReactDOM.render(
                 <Route key={path} path={path} exact component={component}/>
               ))
             }
+
+            <Route path="/talmud/:book" exact component={TalmudBook}/>
+            <Route path="/talmud/:book/:content" exact component={TalmudContent}/>
+            <Route path="/talmud/:book/:content/:daf" exact component={TalmudDaf}/>
             
           </Switch>
         </Layout>
