@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import {List, ListItem} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import './BookTray.css'
-import series from '../p/Mishna/Series';
 
 
 class BookTray extends Component{
   render(){
+    const series = this.props.series || [];
+    const onClick = this.props.onClick || (()=>0);
+    
     return (
       <div className='BookTray'>
         <ul className='BookTray-Series'>
@@ -17,11 +19,13 @@ class BookTray extends Component{
           }
         </ul>
         {
-          series.map(({ title, books, id }) => (
-            <ul key={id} className='BookTray-Books'>
+          series.map(({ title, books, id: sid }) => (
+            <ul key={sid} className='BookTray-Books'>
               {
-                books.map(({ title }) => (
-                  <li className='BookTray-Book'>
+                books.map(({ title, id: bid }) => (
+                  <li key={bid}
+                      className='BookTray-Book'
+                      onClick={()=> onClick(sid, bid)}>
                     {title}
                   </li>
                 ))
