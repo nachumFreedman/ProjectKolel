@@ -10,7 +10,8 @@
 }
 
 ul.BookTray-Series {
-  padding: 0; 
+  padding: 0;
+  width: 115px;
 }
 
 ul.BookTray-Series li{

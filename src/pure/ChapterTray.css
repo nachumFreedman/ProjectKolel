@@ -1,27 +1,48 @@
 .chaptertray-containing {
   border: 1px solid black;
-  max-width: 50vw;
   display: flex;
   border: 1px solid black;
+  padding:0;
+}
+
+.chaptertray-list {
+  padding: .5vw
 }
 
 .chaptertray-title {
   border: 1px solid black;
   display: flex;
-  flex-wrap: wrap;
   align-content: flex-start;
-  max-width: 49vw;
+  border-bottom: 0;
   padding: 1px;
-  margin-left: 0;
+  margin: 0;
+}
+
+
+.chaptertray-title:last-child {
+  border: 1px solid black;
 }
 
 .chaptertray-pereknumber {  
   border: 1px solid black;
   min-width: 1vw;
-  margin: 1px;
-  padding-left: 1vw;
 }
 
 .chaptertray-pereknumber:last-child {
   border-right: 1px solid black;
+}
+
+.chaptertray-pereknumber:first-child {
+  
+}
+
+.chaptertray-pereknumber-link {
+  padding: 0 10px 0 10px
+}
+
+.versewrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justified-content:flex-start;
+  margin-left: 10px
 }
