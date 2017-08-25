@@ -5,8 +5,6 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import SearchIcon from 'react-icons/lib/md/search';
 import TextField from 'material-ui/TextField';
 
-import Subheader from 'material-ui/Subheader';
-
 import GridTray from '../pure/GridTray';
 import MarqueeScroller from '../pure/MarqueeScroller';
 
@@ -45,7 +43,7 @@ class Home extends Component {
             display: 'block',
             textAlign: 'center',
           }}>
-            <img src={bannerImg} style={{ width: 'auto',
+            <img src={bannerImg} alt='' style={{ width: 'auto',
                                           maxWidth: '70vw',
                                           height: '170px',}}/>
             <h3>The Internet Center for the Study of Talmud</h3>
@@ -58,7 +56,7 @@ class Home extends Component {
             margin: '60px 0 0 35px',
             textAlign: 'center',
           }}>
-            <img src={calendarPeek} style={{
+            <img src={calendarPeek} alt='' style={{
               width: 120,
               height: 130,
             }}/>

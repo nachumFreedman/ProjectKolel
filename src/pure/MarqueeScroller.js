@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import {List, ListItem} from 'material-ui/List';
-import Divider from 'material-ui/Divider';
 import './MarqueeScroller.css'
 
 
 import scrolls from './scroll.json';
 
-'onmouseover="copyspeed=pausespeed" onmouseout="copyspeed=marqueespeed"> '
+// 'onmouseover="copyspeed=pausespeed" onmouseout="copyspeed=marqueespeed"> '
 
 class MarqueeScroller extends Component {
   state = {

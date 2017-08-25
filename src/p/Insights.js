@@ -36,7 +36,7 @@ class Insights extends Component {
       <div className="InsightsPage">
         <button style={{ float: 'right' }} onClick={this.toggleLang}>Toggle Language</button>
 
-        <img src={hebTabGif}/>
+        <img src={hebTabGif} alt=''/>
         
         <h3>{pageCopy[this.state.lang].header}</h3>
         <p>

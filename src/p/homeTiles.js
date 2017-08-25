@@ -3,15 +3,12 @@ import FaPlayCircleO from 'react-icons/lib/fa/play-circle-o';
 
 
 import {  
-  bwAskkollel,
   bwBackground,
   bwEngCharts,
   bwFullreview,
   bwInsights,
-  bwMembersSite,
   bwMishna,
   bwQA,
-  bwTalmud,
 } from '../imgs/';
 
 

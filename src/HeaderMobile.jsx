@@ -14,18 +14,6 @@ import './HeaderMobile.css';
 
 const DRAWER_WIDTH = 225;
 
-const paperBarStyle = {
-  display: 'inline-block',
-  margin: '16px 32px 16px 0',
-};
-
-const headerBar = {
-  backgroundColor: 'blue',
-  maxWidth: '8vw',
-  height: '100vh',
-  position: 'fixed',
-};
-
 const menuItemStyle = {
   backgroundColor: '#182963',
   color: 'white',

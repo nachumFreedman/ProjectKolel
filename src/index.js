@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import { Router, Route, Switch, Redirect } from 'react-router';
+import { Router, Route, Switch } from 'react-router';
 import createHashHistory from 'history/createHashHistory';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
