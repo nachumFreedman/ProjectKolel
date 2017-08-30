@@ -64,6 +64,10 @@ class HeaderMobile extends Component {
         }
         
         <Drawer open={this.state.open || (this.context.width > 800)}
+                containerStyle={{
+                  padding: '6vw 1.5vw 0 1.5vw',
+                  backgroundColor: 'rgba(0,0,212, 0.5)',
+                }}
                 width={DRAWER_WIDTH}>
           {
             this.context.width > 800 ? null :
@@ -76,19 +80,22 @@ class HeaderMobile extends Component {
 
           {
 
-              routes.map(({ path, title }, i)=> (
-                <MenuItem key={i}
-                          primaryText={title}
-                          style={menuItemStyle}
-                          href={'#' + path}/>
-                
-              ))
+            routes.map(({ path, title }, i)=> (
+              <MenuItem key={i}
+                        primaryText={title}
+                        style={{
+                          ...menuItemStyle,
+                          margin: 5,
+                        }}
+                        href={'#' + path}/>
+              
+            ))
           }
           
         </Drawer>
       </div>
 
-            )
+    )
   }
 }
 HeaderMobile.contextTypes = {

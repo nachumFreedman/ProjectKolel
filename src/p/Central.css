@@ -1,0 +1,11 @@
+.CentralPage ul {
+  margin: 20px 0;
+}
+
+.CentralPage ol > li {
+  margin: 10px 0;
+}
+
+.CentralPage a {
+  margin-left: 2.5px;
+}
