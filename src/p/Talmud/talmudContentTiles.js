@@ -19,7 +19,7 @@ export default [
   {
     img: bwBackground,
     title: 'Background',
-    link: '/Background/',
+    link: '/Background',
   },
   {
     img: bwQA,

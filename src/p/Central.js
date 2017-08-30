@@ -37,7 +37,7 @@ class Central extends Component {
           </p>
         </center>
         
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', alignItems:'stretch', justifyContent: 'space-around' }}>
           <HeaderList head="About Dafyomi" items={[
             { text: 'Calendars', link: '#calendars' },
             { text: 'What and where is Dafyomi?', link: '#whatisdafyomi' },
