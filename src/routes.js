@@ -1,9 +1,74 @@
 import ComingSoon from './pure/ComingSoon';
-import Mishna from './p/Mishna';
+
 import Home from './p/Home';
+import Talmud from './p/Talmud';
+import Mishna from './p/Mishna';
+import ShulchanAruch from './p/ShulchanAruch';
+
+import Orders from './p/Orders';
+import Central from './p/Central';
+import Kollel from './p/Kollel';
+import Ask from './p/Ask';
+
+
+
+
+
 import Insights from './p/Insights';
 import RevachLDaf from './p/RevachLDaf';
-import Talmud from './p/Talmud';
+
+
+export default [
+  {  
+    title: 'Home',
+    path: '/',
+    component: Home,
+  },
+  {  
+    title: 'Talmud',
+    path: '/talmud',
+    component: Talmud,
+  },
+  {  
+    title: 'Mishna',
+    path: '/mishna',
+    component: Mishna,
+  },
+  {
+    title: 'Shulchan Aruch',
+    path: '/shulchanAruch',
+    component: ShulchanAruch,
+  },
+
+
+
+  {
+    title: 'Orders',
+    path: '/orders',
+    component: Orders,
+  },
+  {
+    title: 'Central',
+    path: '/central',
+    component: Central,
+  },
+  {
+    title: 'Kollel',
+    path: '/kollel',
+    component: Kollel,
+  },
+  {
+    title: 'Ask',
+    path: '/ask',
+    component: Ask,
+  },
+
+
+  
+  
+];
+
+
 
 const Background = ComingSoon;
 const ReviewQA = ComingSoon;
@@ -24,22 +89,7 @@ const YerushalmiAudio = ComingSoon;
 const OurReplies = ComingSoon;
 
 
-export default [
-  {  
-    title: 'Home',
-    path: '/',
-    component: Home,
-  },
-  {  
-    title: 'Talmud',
-    path: '/talmud',
-    component: Talmud,
-  },
-  {  
-    title: 'Mishna',
-    path: '/mishna',
-    component: Mishna,
-  },
+const depRoutes = [
   {    
     title: 'Insights',
     path: '/insights',

@@ -7,3 +7,12 @@ li{
   font-family: sans-serif;
   background-image: url( './imgs/daftile.gif' );
 }
+
+ol li {
+  list-style: initial;
+  list-style-type: square;
+}
+
+ol > li {
+  list-style: decimal;
+}
