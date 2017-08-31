@@ -49,7 +49,7 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
                   titleStyle={{ marginLeft: -16 }}
                   className='homeTile'>
                 <div>
-                  {img ? (<img src={img} alt=''/>) : <Icon/>}
+                  <img src={img} alt=''/>
                 </div>
               </GridTile>
             </a>
