@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import series from '../p/Mishna/Series';
+import series from '../p/Mishna/mishnaSeries';
 import './ChapterTray.css';
 
 const perekim = series[1].books[10].perekim;

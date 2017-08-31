@@ -8,7 +8,8 @@ class ShulchanAruch extends Component {
   render() {
     return (
       <div className="ShulchanAruchPage">
-
+        ShulchanAruch page
+        Put a book tray
       </div>
     );
   }

@@ -20,6 +20,10 @@ const menuItemStyle = {
   border: '2px outset gray',
 };
 
+const menuBackgrounds = [
+  'rgba(0,0,212,0.5)',
+  '#4e91f0',
+];
 
 class HeaderMobile extends Component {
   constructor(props) {
@@ -66,17 +70,9 @@ class HeaderMobile extends Component {
         <Drawer open={this.state.open || (this.context.width > 800)}
                 containerStyle={{
                   padding: '6vw 1.5vw 0 1.5vw',
-                  backgroundColor: 'rgba(0,0,212, 0.5)',
+                  backgroundColor: menuBackgrounds[ 1* (this.context.width <= 800) ],
                 }}
                 width={DRAWER_WIDTH}>
-          {
-            this.context.width > 800 ? null :
-            <MenuItem style={{
-              cursor: 'default',
-              pointerEvents:'none',
-              ...menuItemStyle,
-            }}/>
-          }
 
           {
 
