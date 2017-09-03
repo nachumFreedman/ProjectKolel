@@ -1,14 +1,25 @@
-import FaCompass from 'react-icons/lib/fa/compass';
-import FaPlayCircleO from 'react-icons/lib/fa/play-circle-o';
-
-
-import {  
+import {
+  bwAskkollel,
   bwBackground,
+  bwCharts,
+  bwChidon,
+  bwDailyquiz,
   bwEngCharts,
   bwFullreview,
+  bwGalai,
+  bwHalacha,
   bwInsights,
+  bwMemberssite,
   bwMishna,
-  bwQA,
+  bwNavigator,
+  bwPodcast,
+  bwPoint,
+  bwQnA,
+  bwRevach,
+  bwTalmud,
+  bwTosfos,
+  bwYerushalmy,
+  bwYosef,
 } from '../imgs/';
 
 
@@ -26,10 +37,10 @@ export default [
   {
     img: bwBackground,
     title: 'Background',
-    link: '/Background/',
+    link: '/Background',
   },
   {
-    img: bwQA,
+    img: bwQnA,
     title: 'Review Q&A',
     link: '/ReviewQA',
   },
@@ -44,73 +55,68 @@ export default [
     link: '/EnglishCharts',
   },
   {
-    img: 'images/grid-list/vegetables-790022_640.jpg',
+    img: bwPoint,
     title: 'Point by Point',
     link: '/PointByPoint',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwHalacha,
     title: 'Halachah',
     link: '/Halacha',
     
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwDailyquiz,
     title: 'Daily Quiz',
     link: '/DailyQuiz',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwTosfos,
     title: 'Tosfos',
     link: '/TosFos',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwRevach,
     title: "Revach L'daf",
     link: '/RevachLDaf',
   },
   {
-    Icon: FaPlayCircleO,
+    img: bwPodcast,
     title: 'Podcasts',
     link: '/PodCasts',
   },
   {
-    Icon: FaCompass,
-    title: 'Navigator',
-    link: '/Navigator',
-  },
-  {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwYosef,
     title: 'יוסף דעת',
     link: '/יוסף דעת',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwCharts,
     title: 'טבלאות',
     link: '/טבלאות',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwGalai,
     title: 'גלי מסכתא',
     link: '/גלי מסכתא',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwChidon,
     title: 'חידונים',
     link: '/חידונים',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwYerushalmy,
     title: 'Yerushalmi matchup',
     link: '/YerushalmiMatchup',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwYerushalmy,
     title: 'Yerushalmi Audio',
     link: '/YerushalmiAudio',
   },
   {
-    img: 'images/grid-list/water-plant-821293_640.jpg',
+    img: bwAskkollel,
     title: 'Our Replies',
     link: '/OurReplies',
   },

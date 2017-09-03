@@ -3,7 +3,7 @@ import './Mishna.css'
 import BookTray from '../pure/BookTray';
 import ChapterTray from '../pure/ChapterTray';
 
-import series from './Mishna/Series';
+import series from './Mishna/mishnaSeries';
 
 class Mishna extends Component {
   render() {

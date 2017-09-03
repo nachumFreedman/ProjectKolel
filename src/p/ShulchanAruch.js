@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+import BookTray from '../pure/BookTray';
+import ChapterTray from '../pure/ChapterTray';
+
+import series from './ShulchanAruch/shulchanAruchSeries';
+
 class ShulchanAruch extends Component {
   state = {
   }
@@ -8,7 +13,8 @@ class ShulchanAruch extends Component {
   render() {
     return (
       <div className="ShulchanAruchPage">
-
+        <BookTray series={series}/>
+        <ChapterTray/>
       </div>
     );
   }

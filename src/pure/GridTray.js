@@ -52,7 +52,7 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
                   boxShadow: '1px 1px 5px grey'
                 }}>
                 <div>
-                  {img ? (<img src={img} alt=''/>) : <Icon/>}
+                  <img src={img} alt=''/>
                 </div>
               </GridTile>
             </a>

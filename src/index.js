@@ -14,6 +14,9 @@ import routes from  './routes';
 
 import { TalmudBook, TalmudContent, TalmudDaf } from './p/Talmud/';
 
+import { MishnaDetail } from'./p/Mishna/';
+import { ShulchanAruchDetail } from'./p/ShulchanAruch/';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
@@ -32,6 +35,9 @@ ReactDOM.render(
               ))
             }
 
+            <Route path="/mishna/:detail" exact component={MishnaDetail}/>
+            <Route path="/shulchanAruch/:detail" exact component={ShulchanAruchDetail}/>
+            
             <Route path="/talmud/:book" exact component={TalmudBook}/>
             <Route path="/talmud/:book/:content" exact component={TalmudContent}/>
             <Route path="/talmud/:book/:content/:daf" exact component={TalmudDaf}/>
