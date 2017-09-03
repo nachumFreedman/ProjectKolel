@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import GridTray from '../../pure/GridTray';
 
-import tiles from './talmudContentTiles';
+import tiles from '../homeTiles';
 
 class TalmudBook extends Component {
   render(){

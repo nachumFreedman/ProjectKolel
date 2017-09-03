@@ -1,7 +1,7 @@
 import React from 'react';
 import { GridList, GridTile } from 'material-ui/GridList';
 import Subheader from 'material-ui/Subheader';
-
+import './GridTray.css'
 
 export default ({ width, children, tiles, subheaderStyle={} }) => {
 
@@ -25,7 +25,6 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
   return (
     <div style={{
       backgroundColor: 'white',
-      
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'space-around',
@@ -41,18 +40,22 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
         </Subheader>
 
         {
-          tiles.map(({ title, img, Icon, link }, i) => (
+          tiles.map(({ title, img, hoverImg, Icon, link }, i) => (
             <a href={'#' + link} key={i}>
               <GridTile
-                title={title}
                 titleStyle={{ marginLeft: -16 }}
-                className='homeTile'
                 style={{
                   borderRadius: '1px',
-                  boxShadow: '1px 1px 5px grey'
+                  boxShadow: '1px 1px 5px grey',
+                  height: '9vw',
                 }}>
-                <div>
+                <div
+                  style={{display:'flex',
+                          justifyContent: 'center'}}
+                  className='gridTrayImgContainer'
+                >
                   <img src={img} alt=''/>
+                  <img src={hoverImg} alt=''/>
                 </div>
               </GridTile>
             </a>
@@ -60,6 +63,6 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
         }
       </GridList>
     </div>
-
+    
   );
 };

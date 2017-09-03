@@ -41,9 +41,9 @@ import coTosfos from './co-tosfos.png';
 import coYerushalmy from './co-yerushalmy.png';
 import coYosef from './co-yosef.png';
 
-
-
 import calendarPeek from './5778calendarpeek-big.gif';
+
+const coPoint = bwPoint;
 
 export {
   bwAskkollel,
@@ -89,5 +89,7 @@ export {
   coYerushalmy,
   coYosef,
 
+  coPoint,
+  
   calendarPeek,
 };

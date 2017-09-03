@@ -1,0 +1,23 @@
+.gridTrayImgContainer img:first-child {
+  display: block;
+}
+
+.gridTrayImgContainer:hover img:first-child {
+  display: none;
+}
+
+.gridTrayImgContainer img:last-child {
+  display: none;
+}
+
+.gridTrayImgContainer:hover img:last-child {
+  display: block;
+}
+.gridTrayImgContainer img {
+  width: auto;
+  height: 100%;
+}
+
+.gridTrayImgContainer {
+  height: 100%;
+}
