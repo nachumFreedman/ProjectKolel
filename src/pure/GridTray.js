@@ -1,6 +1,4 @@
-
 import React from 'react';
-
 import { GridList, GridTile } from 'material-ui/GridList';
 import Subheader from 'material-ui/Subheader';
 
@@ -20,9 +18,10 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
     textAlign:'center',
     lineHeight: '1.5em',
     ...subheaderStyle,
+    boxShadow: '1px 0 5px grey'
   };
 
-    
+  
   return (
     <div style={{
       backgroundColor: 'white',
@@ -33,21 +32,25 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
     }}>
 
       <GridList
-          cellHeight={'auto'}
-          style={{ overflowY: 'auto' }}
-          cols={gridCols}>
+        cellHeight={'auto'}
+        style={{ overflowY: 'auto' }}
+        cols={gridCols}>
 
         <Subheader style={subStyles}>
-          {children}
+          {children} 
         </Subheader>
 
         {
           tiles.map(({ title, img, Icon, link }, i) => (
             <a href={'#' + link} key={i}>
               <GridTile
-                  title={title}
-                  titleStyle={{ marginLeft: -16 }}
-                  className='homeTile'>
+                title={title}
+                titleStyle={{ marginLeft: -16 }}
+                className='homeTile'
+                style={{
+                  borderRadius: '1px',
+                  boxShadow: '1px 1px 5px grey'
+                }}>
                 <div>
                   {img ? (<img src={img} alt=''/>) : <Icon/>}
                 </div>

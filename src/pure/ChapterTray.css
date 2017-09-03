@@ -1,43 +1,41 @@
-.chaptertray-containing {
-  border: 1px solid black;
-  display: flex;
-  border: 1px solid black;
-  padding:0;
-}
+
 
 .chaptertray-list {
-  padding: .5vw
-}
-
-.chaptertray-title {
-  border: 1px solid black;
-  display: flex;
-  align-content: flex-start;
-  border-bottom: 0;
-  padding: 1px;
-  margin: 0;
-}
-
-
-.chaptertray-title:last-child {
-  border: 1px solid black;
-}
-
-.chaptertray-pereknumber {  
-  border: 1px solid black;
-  min-width: 1vw;
-}
-
-.chaptertray-pereknumber:last-child {
-  border-right: 1px solid black;
-}
-
-.chaptertray-pereknumber:first-child {
+  padding: 2vw;
+  box-shadow: 1px 1px 2px grey;
+  margin-left: 1vw; 
+  background-color:white;
   
 }
 
+.chaptertray-title {
+  display: flex;
+  align-content: flex-start;
+  padding: 1px;
+  margin: 0;
+
+}
+
+.chaptertray-pereknumber {  
+  min-width: 1vw;
+  width: 4vw;
+  text-align: center;
+}
+
+.chaptertray-pereknumber:last-child {
+  border-right: 0;
+}
+
+.chaptertray-pereknumber{
+  box-shadow: 1px 1px .5px #D8D8D8;
+}
+
+.chaptertray-pereknumber:hover{
+  background-color:#D8D8D8;
+}
+
 .chaptertray-pereknumber-link {
-  padding: 0 10px 0 10px
+  text-decoration: none;
 }
 
 .versewrapper {

@@ -12,16 +12,16 @@ class ChapterTray extends Component{
           {
             perekim.map((perek, pi) => (
               <li key={pi} className='chaptertray-title'>
-                <div>Perek&nbsp;{''+ (pi+1)}</div>
+                <div>Perek&nbsp;{''+ (pi+1)+ ':'}</div>
                 <div className='versewrapper'>
                   {    
                     perek.map((vi) => (
-                      
-                      <div key={vi} className='chaptertray-pereknumber'>
-                        <a href="#/mishna" className='chaptertray-pereknumber-link'>
+                      <a href="#/mishna" className='chaptertray-pereknumber-link'>                      
+                        <div key={vi} className='chaptertray-pereknumber'>
+
                           {vi}
-                        </a>
-                      </div>
+                        </div>
+                      </a>
                     ) ) 
                   }
                 </div>

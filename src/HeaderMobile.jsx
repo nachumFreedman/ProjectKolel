@@ -36,7 +36,7 @@ class HeaderMobile extends Component {
       <div>
         {
           this.context.width > 800 ? null :          
-          <RaisedButton
+          <RaisedButton 
             style={{
               position: 'fixed',
               zIndex: 1330,
