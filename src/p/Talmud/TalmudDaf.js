@@ -4,13 +4,16 @@ import ReactMarkdown from 'react-markdown';
 
 import sampleDaf from '../../network/GetHtmlDaf';
 
+const domain = 'https://daf-stream.herokuapp.com';
+//const domain = 'http://localhost:3000';
+
 class TalmudDaf extends Component {
   state = {
     md: ''
   }
   
   componentDidMount(){
-    fetch('https://daf-stream.herokuapp.com/dafs/raw/kesuvos/insites/ks-dt-'+
+    fetch(domain+'/dafs/raw/kesuvos/insites/ks-dt-'+
           ('000' + window.location.hash.slice(window.location.hash.lastIndexOf('/')+1 )).substr(-3)
          +'.htm')
       .then(pon => pon.text())
