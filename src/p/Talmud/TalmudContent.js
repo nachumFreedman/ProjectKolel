@@ -7,7 +7,7 @@ class TalmudContent extends Component {
     return (
       <div>
         <p>Choose which Daf</p>
-        <DafTable lang='he' hrefPrefix={window.location.hash}/>
+        <DafTable lang='en' hrefPrefix={window.location.hash}/>
       </div>
     );
   }

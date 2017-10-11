@@ -9,7 +9,8 @@ const domain = 'https://daf-stream.herokuapp.com';
 
 const urlFromPathName = (pathname) => {  
   const pathParams = pathname.split('/');
-  const url = domain + "/" + 'dafs/raw/' + pathParams[2] + "/" + pathParams[3] + "/" + pathParams[4];
+  const url = domain + '/dafs/raw/' + pathParams[2] + '/' + pathParams[3] + '/' + pathParams[4];
+  
   return url;
 } 
 
@@ -19,11 +20,11 @@ class TalmudDaf extends Component {
   }
   
   componentDidMount(){
-    console.log(this.props)
-    console.log(urlFromPathName(this.props.location.pathname))
+    console.log('mm');
     fetch(urlFromPathName(this.props.location.pathname))
            .then(pon => pon.text())
-           .then(pon => this.setState({ md: pon }) )
+           .then(pon => console.log(pon)||this.setState({ md: pon }) )
+    .catch(e => console.log(e) );
   }
   
   render(){
