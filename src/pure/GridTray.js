@@ -11,14 +11,15 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
     3 : 5, tiles.length);
 
   const subStyles = {
-    padding: 0,
+
     backgroundColor: '#92c1ff',
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
     textAlign:'center',
     lineHeight: '1.5em',
     ...subheaderStyle,
-    boxShadow: '1px 0 5px grey'
+    boxShadow: '1px 0 5px grey',
+    padding: '0 calc(10vw - 20px)',
   };
 
   

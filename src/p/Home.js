@@ -44,8 +44,8 @@ class Home extends Component {
             textAlign: 'center',
           }}>
             <img src={bannerImg} alt='' style={{ width: 'auto',
-                                          maxWidth: '70vw',
-                                          height: '170px',}}/>
+                                                 maxWidth: '70vw',
+                                                 height: '170px',}}/>
             <h3>The Internet Center for the Study of Talmud</h3>
             <i>brought to you by <a href="/">Kollel Iyun Hadaf</a></i>
             <p><small>Rosh Kollel: Rav Mordecai Kornfeld</small></p>
@@ -55,7 +55,9 @@ class Home extends Component {
             maxWidth: 120,
             margin: '60px 0 0 35px',
             textAlign: 'center',
-          }}>
+          }}>()=>{
+            
+          }
             <img src={calendarPeek} alt='' style={{
               width: 120,
               height: 130,
@@ -81,12 +83,14 @@ class Home extends Component {
             </b></p>
           </div>
           <div>
-            Sunday's Daf is	יד	(14)
-            SANEHDRIN 14 (7 Av) - Dedicated in memory of Dr. Simcha
-            Bekelnitzky (Simcha Gedalya ben Shraga Feibush) of Queens, N.Y.,
-            Niftar 7 Av 5757, by his wife and daughters. G-d-fearing and
-            knowledgeable, Simcha was well known in the community for his
-            Chesed and Tzedakah. He will long be remembered.
+            <div style={{fontWeight: 'bold', color: 'black'}}> Sunday's Daf is	יד	(14)  SANEHDRIN 14 (7 Av)</div>
+            <div>
+              Dedicated in memory of Dr. Simcha
+              Bekelnitzky (Simcha Gedalya ben Shraga Feibush) of Queens, N.Y.,
+              Niftar 7 Av 5757, by his wife and daughters. G-d-fearing and
+              knowledgeable, Simcha was well known in the community for his
+              Chesed and Tzedakah. He will long be remembered.
+            </div>
           </div>
         </GridTray>
 
@@ -122,7 +126,7 @@ class Home extends Component {
             </FloatingActionButton>
           </a>
         </div>
-      </div>
+          </div>
     );
   }
 }
