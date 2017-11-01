@@ -47,7 +47,8 @@ export default ({ width, children, tiles, subheaderStyle={} }) => {
                 style={{
                   borderRadius: '1px',
                   boxShadow: '1px 1px 5px grey',
-                  height: '9vw',
+                  height: '18vh',
+                  maxHeight: '150px',
                 }}>
                 <div
                   style={{display:'flex',

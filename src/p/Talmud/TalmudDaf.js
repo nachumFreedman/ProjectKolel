@@ -6,8 +6,11 @@ const domain = 'https://daf-stream.herokuapp.com';
 //const domain = 'http://localhost:3000';
 
 const urlFromPathName = (pathname) => {  
-  const pathParams = pathname.split('/');
-  const url = domain + '/dafs/raw/' + pathParams[2] + '/' + pathParams[3] + '/' + pathParams[4];
+  const [ ,,mesechta,contentType,dafNumber ] = pathname.split('/')
+  //pathParams[0] = empty string
+  //pathParams[1] = route-book-series (talmud/mishna)
+
+  const url = (`${domain}/dafs/raw/${mesechta}/${contentType}/${dafNumber}`);
   
   return url;
 } 
